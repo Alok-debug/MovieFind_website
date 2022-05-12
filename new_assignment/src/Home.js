@@ -10,7 +10,7 @@ import Filter from './Filter'
 
 function Home() {
     const [movieData, setMovieData] = useState([]);
-    const [search, setSearch]       = useState("Breaking");
+    const [search, setSearch]       = useState("Marvel");
 
 
     useEffect(() => {

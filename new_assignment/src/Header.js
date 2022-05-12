@@ -60,9 +60,9 @@ function Header({setSearch, search}) {
             
                     <div className='header__cart'>
                     <span className='header__optionLine1'>
-                        Your
+                        Be A
                     </span>
-                        <span className='cart__name'>Membership</span>
+                        <span className='cart__name'>Member</span>
                     </div>
                     
                 
