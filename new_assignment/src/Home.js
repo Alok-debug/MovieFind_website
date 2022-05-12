@@ -28,9 +28,9 @@ function Home() {
     const response = await fetch(`https://movie-database-alternative.p.rapidapi.com/?s=${search}&r=json&page=1` ,options);
     const data = await response.json();
     setMovieData(data.Search);
-    console.log(data.Search);
+    
     }
-    console.log(search);
+    
     
 return (<>
     <div className='home__container'>
@@ -40,10 +40,13 @@ return (<>
     />
     <LiveSpace />
     <Filter />
+    {/* using ternary operator, so that following component will render 
+    only when data is found. */}
     {!movieData ? (<p>Data not found</p>
     ) :<div className='result__container'>
         {movieData.map((item) => {
-            return (<Card 
+            return (
+                <Card 
                 key = {item.imdbID}
                 movie ={item}
             />)
