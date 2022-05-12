@@ -1,9 +1,12 @@
 import React from 'react';
 import './Header.css';
+import {useState} from 'react';
 
 
 
-function Header() {
+function Header({setSearch, search}) {
+    const [typing, setTyping] = useState("hi");
+
     return (
     <div className='header'>
         
@@ -18,7 +21,11 @@ function Header() {
             className='header__search'>
             <input 
             className='header__searchInput'
-            type="text" />
+            type="search"
+            onChange ={ (event) => { 
+                
+                setTyping(event.target.value)
+                setSearch(typing)}} />
             
         </div>
         

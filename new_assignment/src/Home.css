@@ -1,4 +1,5 @@
-.home__container{
+.result__container{
+    width: 1250px;
     display: grid;
     justify-content:space-between;
     grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
