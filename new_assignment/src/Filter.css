@@ -1,0 +1,32 @@
+.filter__container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color:#e4ece6 ;
+    height: 50px;
+
+    }
+
+.filter__container button{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    font-weight:bold;
+    border-radius: 1rem;
+    border: none;
+    background:white;
+    width: 10rem;
+    height: 2.5rem;
+    min-width: 1rem;
+    color: black;
+    border: 1.2px solid rgb(67, 72, 83)
+}
+
+button.active{
+    background-color: black;
+    color: white;
+}
+
+
+
+

@@ -1,0 +1,11 @@
+.liveSpace__container{
+    background-color: #d4edda;
+    height: 7rem;
+    text-align: left;
+        
+}
+
+.liveSpace__container > h1{
+    margin-left: 20px;
+}
+
