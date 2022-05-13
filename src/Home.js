@@ -14,23 +14,23 @@ function Home() {
 
 
     useEffect(() => {
+        const getMovies = async () => {
+            const options = {
+                method: 'GET',
+                headers: {
+                'X-RapidAPI-Host': 'movie-database-alternative.p.rapidapi.com',
+                'X-RapidAPI-Key': '7b8dd37116mshd8cd9bb2520b8dcp130ab3jsn16cd887b08f9'
+                }
+            };
+            const response = await fetch(`https://movie-database-alternative.p.rapidapi.com/?s=${search}&r=json&page=1` ,options);
+            const data = await response.json();
+            setMovieData(data.Search);
+            }
         getMovies();
-         // eslint-disable-next-line react-hooks/exhaustive-deps
+    
     },  [search]); 
     
-    const getMovies = async () => {
-    const options = {
-        method: 'GET',
-        headers: {
-        'X-RapidAPI-Host': 'movie-database-alternative.p.rapidapi.com',
-        'X-RapidAPI-Key': '7b8dd37116mshd8cd9bb2520b8dcp130ab3jsn16cd887b08f9'
-        }
-    };
-    const response = await fetch(`https://movie-database-alternative.p.rapidapi.com/?s=${search}&r=json&page=1` ,options);
-    const data = await response.json();
-    setMovieData(data.Search);
     
-    }
     
     
 return (<>
