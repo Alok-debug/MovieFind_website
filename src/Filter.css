@@ -4,8 +4,8 @@
     justify-content: flex-start;
     background-color:#e4ece6 ;
     height: 50px;
-
-    }
+    margin-left: 5vw;
+}
 
 .filter__container button{
     margin-right: 1rem;
@@ -25,6 +25,14 @@
 button.active{
     background-color: black;
     color: white;
+}
+
+@media (max-width:500px){
+    .filter__container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
+        }
 }
 
 

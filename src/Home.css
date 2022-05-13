@@ -1,14 +1,17 @@
 .result__container{
-    width: 1250px;
+    width: 80vw;
     display: grid;
     justify-content:space-between;
     grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-    grid-column-gap: 8rem;
+    grid-column-gap: 5rem;
+    margin: 3rem auto;
     
 }
 
-img {
-    width: 100%;
-    height: 30vh;
-    object-fit:contain;
+@media (max-width: 500px){
+    .result__container{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
 }
