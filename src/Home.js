@@ -15,6 +15,7 @@ function Home() {
 
     useEffect(() => {
         getMovies();
+         // eslint-disable-next-line react-hooks/exhaustive-deps
     },  [search]); 
     
     const getMovies = async () => {
