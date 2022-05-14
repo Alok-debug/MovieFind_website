@@ -1,15 +1,10 @@
 .card__container{
     background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     color: white;
     width:25vw ;
     height: 20rem;
     margin: 30px auto;
     border-radius: 0.5rem;
-    
-    
 }
 
 img{
@@ -25,15 +20,33 @@ h3 {
 
 .card__tinyBox{
     background-color: #2C3333;
-    width: 30%;
+    width: 60%;
     height: 15%;
     border-radius: 0.5rem;
-    margin: 12px 10px;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     padding: 5px;
+}
+.card__voting{
+    color: red;
+    background-color: gold;
+    width: 10%;
+    height: 10%;
+    border-radius: 0.2rem;
+    align-self:center;
+    margin-right: 0px;
+    
+}
+.card__bottom{
+    display: flex;
+    margin: 1rem 1.5rem;
+    width: 85%;
+    justify-content: space-between;
+
+
 }
 
 @media (max-width: 500px){
