@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 export default function Filter( {setActiveGenre, activeGenre, setFiltered, movieData}) {
 
     useEffect(() => {
+        
         if(activeGenre === 0){
             setFiltered(movieData);
             return;
