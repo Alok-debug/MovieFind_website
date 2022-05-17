@@ -1,10 +1,13 @@
 .card__container{
     background-color: black;
     color: white;
-    width:25vw ;
-    height: 20rem;
+    width: max-content ;
+    height: max-content;
     margin: 30px auto;
     border-radius: 0.5rem;
+    display: flex;
+    justify-content:flex-end;
+    flex-direction: column;
 }
 
 img{
@@ -21,9 +24,7 @@ h3 {
 .card__tinyBox{
     background-color: #2C3333;
     width: 60%;
-    height: 15%;
     border-radius: 0.5rem;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,7 +35,6 @@ h3 {
     color: red;
     background-color: gold;
     width: 10%;
-    height: 10%;
     border-radius: 0.2rem;
     align-self:center;
     margin-right: 0px;

@@ -6,8 +6,6 @@ import Header from './Header';
 import LiveSpace from './LiveSpace';
 import Filter from './Filter'
 
-
-
 function Home() {
     const [movieData, setMovieData]       = useState([]);
     const [search, setSearch]             = useState(null);
@@ -18,7 +16,6 @@ function Home() {
         const BASE_URL = 'https://api.themoviedb.org/3';
         const API_URL  = BASE_URL + '/discover/movie?sort_by=popularity.disc&'+API_KEY ;
         const searchURL = BASE_URL + '/search/movie?'+API_KEY;
-
 
     useEffect(() => {
             const getMovies = async (url) => {
@@ -62,11 +59,8 @@ return (<>
             />)
         })}
     </div>  }
-    
-    </div>
-
-    </>
-    )
+</div>
+</>)
 }
 
 export default Home;
