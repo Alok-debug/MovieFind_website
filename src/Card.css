@@ -23,13 +23,14 @@ h3 {
 
 .card__tinyBox{
     background-color: #2C3333;
-    width: 60%;
+    width: 80%;
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 5px;
+    margin-left: 0px;
+    
 }
 .card__voting{
     color: red;
