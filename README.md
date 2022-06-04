@@ -4,7 +4,7 @@ Tech Stack Used: ReactJS, HTML, CSS
 
 Hosted on: Netlify using CI/CD pipeline.
 
-Here is the Website Link : https://assignmentwebsite-moviesearch.netlify.app/
+Here is the link of website: https://searchyourmoviehere.netlify.app/
 
 Here is a snapshot of the webpage:
 
